@@ -14,6 +14,7 @@
 		E96CDD4F1D05870600E5104B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96CDD4D1D05870600E5104B /* LaunchScreen.storyboard */; };
 		E96CDD5A1D05870600E5104B /* NorenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD591D05870600E5104B /* NorenTests.swift */; };
 		E96CDD651D05870600E5104B /* NorenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD641D05870600E5104B /* NorenUITests.swift */; };
+		E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E96CDD601D05870600E5104B /* NorenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96CDD641D05870600E5104B /* NorenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenUITests.swift; sourceTree = "<group>"; };
 		E96CDD661D05870600E5104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				E96CDD441D05870500E5104B /* AppDelegate.swift */,
 				E96CDD461D05870500E5104B /* ViewController.swift */,
+				E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */,
 				E96CDD481D05870600E5104B /* Main.storyboard */,
 				E96CDD4B1D05870600E5104B /* Assets.xcassets */,
 				E96CDD4D1D05870600E5104B /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */,
 				E96CDD471D05870600E5104B /* ViewController.swift in Sources */,
 				E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */,
 			);
@@ -482,6 +486,7 @@
 				E96CDD6B1D05870600E5104B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E96CDD6C1D05870600E5104B /* Build configuration list for PBXNativeTarget "NorenTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				E96CDD6E1D05870600E5104B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E96CDD6F1D05870600E5104B /* Build configuration list for PBXNativeTarget "NorenUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				E96CDD711D05870600E5104B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
