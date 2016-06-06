@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    func downloadImageFromUrl(url: String) {
+    func fromUrl(url: String) {
         guard let url = NSURL(string: url) else { return }
         
         NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in

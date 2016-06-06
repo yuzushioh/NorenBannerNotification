@@ -15,6 +15,8 @@
 		E96CDD5A1D05870600E5104B /* NorenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD591D05870600E5104B /* NorenTests.swift */; };
 		E96CDD651D05870600E5104B /* NorenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD641D05870600E5104B /* NorenUITests.swift */; };
 		E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */; };
+		E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD741D05892400E5104B /* NorenViewType.swift */; };
+		E96CDD771D05897200E5104B /* NorenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD761D05897200E5104B /* NorenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E96CDD641D05870600E5104B /* NorenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenUITests.swift; sourceTree = "<group>"; };
 		E96CDD661D05870600E5104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		E96CDD741D05892400E5104B /* NorenViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorenViewType.swift; sourceTree = "<group>"; };
+		E96CDD761D05897200E5104B /* NorenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				E96CDD441D05870500E5104B /* AppDelegate.swift */,
 				E96CDD461D05870500E5104B /* ViewController.swift */,
 				E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */,
+				E96CDD741D05892400E5104B /* NorenViewType.swift */,
+				E96CDD761D05897200E5104B /* NorenManager.swift */,
 				E96CDD481D05870600E5104B /* Main.storyboard */,
 				E96CDD4B1D05870600E5104B /* Assets.xcassets */,
 				E96CDD4D1D05870600E5104B /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96CDD771D05897200E5104B /* NorenManager.swift in Sources */,
 				E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */,
+				E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */,
 				E96CDD471D05870600E5104B /* ViewController.swift in Sources */,
 				E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */,
 			);
