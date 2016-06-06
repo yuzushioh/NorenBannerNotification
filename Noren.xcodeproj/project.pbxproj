@@ -17,6 +17,7 @@
 		E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */; };
 		E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD741D05892400E5104B /* NorenViewType.swift */; };
 		E96CDD771D05897200E5104B /* NorenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD761D05897200E5104B /* NorenManager.swift */; };
+		E96CDD791D058B1B00E5104B /* Noren.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD781D058B1B00E5104B /* Noren.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		E96CDD741D05892400E5104B /* NorenViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorenViewType.swift; sourceTree = "<group>"; };
 		E96CDD761D05897200E5104B /* NorenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorenManager.swift; sourceTree = "<group>"; };
+		E96CDD781D058B1B00E5104B /* Noren.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noren.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				E96CDD461D05870500E5104B /* ViewController.swift */,
 				E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */,
 				E96CDD741D05892400E5104B /* NorenViewType.swift */,
+				E96CDD781D058B1B00E5104B /* Noren.swift */,
 				E96CDD761D05897200E5104B /* NorenManager.swift */,
 				E96CDD481D05870600E5104B /* Main.storyboard */,
 				E96CDD4B1D05870600E5104B /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 			files = (
 				E96CDD771D05897200E5104B /* NorenManager.swift in Sources */,
 				E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */,
+				E96CDD791D058B1B00E5104B /* Noren.swift in Sources */,
 				E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */,
 				E96CDD471D05870600E5104B /* ViewController.swift in Sources */,
 				E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */,

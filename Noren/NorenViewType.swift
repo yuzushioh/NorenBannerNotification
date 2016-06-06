@@ -10,10 +10,21 @@ import Foundation
 import UIKit
 
 protocol NorenViewType {
-    var title: String? { get }
-    var username: String? { get }
-    var body: String { get }
-    var imageUrl: String? { get }
+    var norenInfomation: NorenInformation { get }
     
-    func createNorenView(customView: UIView) -> UIView
+    static func createNorenView<V: NorenViewType where V: UIView>(customView: V, noren: NorenInformation) -> V
+}
+
+extension NorenViewType where Self: UIView {
+    func onTap<N: NorenViewType where N: UIView>() -> N {
+        let noren = self as! N
+        
+        return noren
+    }
+    
+    func displayTime<N: NorenViewType where N: UIView>() -> N {
+        let noren = self as! N
+        
+        return noren
+    }
 }
