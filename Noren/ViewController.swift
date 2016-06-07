@@ -20,10 +20,11 @@ class ViewController: UIViewController {
     }
     
     private func showNoren() {
-        let testView = TestView.createTestView()
-        let view = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
         
-        view
+        let testView = TestView.createTestView()
+        let norenView = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
+        
+        norenView
             .onTap {
                 print("Tapped")
             }
@@ -33,6 +34,5 @@ class ViewController: UIViewController {
     @IBAction func showNorenViewTapped(sender: AnyObject) {
         showNoren()
     }
-
 }
 

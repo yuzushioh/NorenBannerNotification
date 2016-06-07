@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-public class NorenManager: NSObject {
+public class NorenManager {
     
-    static func createNorenView<V: NorenViewType>(customView: V, norenInformation: NorenInformation) -> V {
+    static public func createNorenView<V: NorenViewType>(customView: V, norenInformation: NorenInformation) -> V {
         var customView = customView
         customView.norenInfomation = norenInformation
         
         return customView
     }
     
-    static func showNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
+    static public func showNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
         dispatch_async(dispatch_get_main_queue()) {
             if self.isNorenViewShown() == true {
                 self.dismissNorenView({
@@ -30,7 +30,7 @@ public class NorenManager: NSObject {
         }
     }
     
-    static func dismissNorenView(dismissHandler: NorenOperationHandler? = nil, duration: NSTimeInterval) {
+    static public func dismissNorenView(dismissHandler: NorenOperationHandler? = nil, duration: NSTimeInterval) {
         guard let activeNorenView = self.activeNorenView else { return }
         let offScreenPoint = CGPoint(x: activeNorenView.center.x, y: -activeNorenView.frame.height/2)
         
@@ -52,15 +52,15 @@ public class NorenManager: NSObject {
         })
     }
     
-    private static var activeNorenView: UIView?
+    static private var activeNorenView: UIView?
     
-    private static let animationDuration = 0.3
+    static private let animationDuration = 0.3
     
-    private static func isNorenViewShown() -> Bool {
+    static private func isNorenViewShown() -> Bool {
         return activeNorenView != nil
     }
     
-    private static func dismissCurrentNorenView(dismissHandler: NorenOperationHandler?, duration: NSTimeInterval) {
+    static private func dismissCurrentNorenView(dismissHandler: NorenOperationHandler?, duration: NSTimeInterval) {
         if isNorenViewShown() {
             dismissNorenView({ _ in
                 dismissHandler?()
@@ -68,7 +68,7 @@ public class NorenManager: NSObject {
         }
     }
     
-    private static func displayNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
+    static private func displayNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
         self.activeNorenView = norenView
         
         guard let mainWindow = UIApplication.sharedApplication().keyWindow else { return }

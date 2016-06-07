@@ -165,8 +165,8 @@
 			children = (
 				2AF24D8D1D06AE0600C93CBC /* Extensions */,
 				E96CDD781D058B1B00E5104B /* Noren.swift */,
-				E96CDD741D05892400E5104B /* NorenViewType.swift */,
 				E96CDD761D05897200E5104B /* NorenManager.swift */,
+				E96CDD741D05892400E5104B /* NorenViewType.swift */,
 			);
 			name = Noren;
 			sourceTree = "<group>";
