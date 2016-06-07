@@ -1,5 +1,5 @@
 # NorenNotification
-__NorenNotification__ is the all customable and easy-to-setup in-app notification library for iOS developers and designers
+__NorenNotification__ is the all customisable and easy-to-setup in-app notification library for iOS developers and designers
 who want to implement the best in-app notification in minutes.
 
 ## Requirements
