@@ -11,33 +11,59 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your notification body message comes here! You can put username, title, body, and profileImage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-g3-71b">
-                    <rect key="frame" x="20" y="27" width="335" height="29"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have new Messages" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-g3-71b">
+                    <rect key="frame" x="56" y="38" width="148" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="4uB-gl-P5N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yuzushioh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-YT-yIQ">
+                    <rect key="frame" x="56" y="18" width="65" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="zyq-9U-5mK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2231" translatesAutoresizingMaskIntoConstraints="NO" id="ueZ-mL-pm1" customClass="CircledImageView" customModule="Noren" customModuleProvider="target">
+                    <rect key="frame" x="10" y="18" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="6Oo-6M-LRb"/>
+                        <constraint firstAttribute="width" constant="36" id="Jhd-GM-FF3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="×" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-yx-jGJ">
+                    <rect key="frame" x="348" y="18" width="19" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="R3x-3o-igZ"/>
+                        <constraint firstAttribute="width" constant="19" id="vZR-tn-epi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Japanese Noren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-YT-yIQ">
-                    <rect key="frame" x="20" y="8" width="101" height="16"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="16" id="XLQ-CH-jua"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.55000000000000004" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="CV6-YT-yIQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="5fi-Qm-pWO"/>
-                <constraint firstAttribute="bottom" secondItem="Jl8-g3-71b" secondAttribute="bottom" constant="8" id="7yi-lh-Jha"/>
-                <constraint firstItem="Jl8-g3-71b" firstAttribute="top" secondItem="CV6-YT-yIQ" secondAttribute="bottom" constant="3" id="Lcy-SL-AoC"/>
-                <constraint firstAttribute="trailing" secondItem="Jl8-g3-71b" secondAttribute="trailing" constant="20" id="TB1-rV-Y1t"/>
-                <constraint firstItem="Jl8-g3-71b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fFO-R9-fu6"/>
-                <constraint firstItem="CV6-YT-yIQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ums-v5-xNQ"/>
+                <constraint firstItem="Jl8-g3-71b" firstAttribute="top" secondItem="CV6-YT-yIQ" secondAttribute="bottom" constant="4" id="6pV-Db-x4A"/>
+                <constraint firstAttribute="bottom" secondItem="ueZ-mL-pm1" secondAttribute="bottom" constant="10" id="Bju-ed-4as"/>
+                <constraint firstItem="ueZ-mL-pm1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="asj-ka-UAY"/>
+                <constraint firstAttribute="bottom" secondItem="Jl8-g3-71b" secondAttribute="bottom" constant="10" id="gSx-Fd-CeW"/>
+                <constraint firstAttribute="trailing" secondItem="Ogt-yx-jGJ" secondAttribute="trailing" constant="8" id="hu7-Op-nye"/>
+                <constraint firstAttribute="bottom" secondItem="Ogt-yx-jGJ" secondAttribute="bottom" constant="10" id="lkp-cj-GhX"/>
+                <constraint firstItem="CV6-YT-yIQ" firstAttribute="leading" secondItem="ueZ-mL-pm1" secondAttribute="trailing" constant="10" id="lu7-y7-VQ5"/>
+                <constraint firstItem="Jl8-g3-71b" firstAttribute="leading" secondItem="ueZ-mL-pm1" secondAttribute="trailing" constant="10" id="tB3-0g-R8v"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="796.5" y="376"/>
         </view>
     </objects>
+    <resources>
+        <image name="IMG_2231" width="954" height="959"/>
+    </resources>
 </document>

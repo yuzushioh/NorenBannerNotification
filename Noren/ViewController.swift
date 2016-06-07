@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func showNoren() {
+    private func showInstagramLikeNotification() {
         
         let testView = TestView.createTestView()
         let norenView = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
@@ -30,9 +30,22 @@ class ViewController: UIViewController {
             }
             .show(duration: 2.0)
     }
+    
+    private func showFacebookLikeNotification() {
+        let testView = TestNorenView2.createTestView()
+        let norenView = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
+        
+        norenView
+            .onTapDismiss()
+            .show(duration: 2.0)
+    }
 
     @IBAction func showNorenViewTapped(sender: AnyObject) {
-        showNoren()
+        showInstagramLikeNotification()
+    }
+    
+    @IBAction func showFacebookLikeView(sender: AnyObject) {
+        showFacebookLikeNotification()
     }
 }
 

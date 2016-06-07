@@ -18,6 +18,9 @@
 		2AF24DB81D06C48900C93CBC /* NorenViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD741D05892400E5104B /* NorenViewType.swift */; };
 		2AF24DB91D06C48900C93CBC /* NorenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD761D05897200E5104B /* NorenManager.swift */; };
 		2AF24DBA1D06C48E00C93CBC /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */; };
+		2AF24DFA1D06FCDA00C93CBC /* CircledImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF24DF91D06FCDA00C93CBC /* CircledImageView.swift */; };
+		2AF24DFC1D06FDF500C93CBC /* TestNorenView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF24DFB1D06FDF500C93CBC /* TestNorenView2.swift */; };
+		2AF24DFE1D06FE5000C93CBC /* TestNorenView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF24DFD1D06FE5000C93CBC /* TestNorenView2.xib */; };
 		E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD441D05870500E5104B /* AppDelegate.swift */; };
 		E96CDD471D05870600E5104B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD461D05870500E5104B /* ViewController.swift */; };
 		E96CDD4A1D05870600E5104B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96CDD481D05870600E5104B /* Main.storyboard */; };
@@ -92,6 +95,9 @@
 		2AF24DA21D06C48000C93CBC /* NorenNotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorenNotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF24DA91D06C48000C93CBC /* NorenNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenNotificationTests.swift; sourceTree = "<group>"; };
 		2AF24DAB1D06C48000C93CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF24DF91D06FCDA00C93CBC /* CircledImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircledImageView.swift; sourceTree = "<group>"; };
+		2AF24DFB1D06FDF500C93CBC /* TestNorenView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNorenView2.swift; sourceTree = "<group>"; };
+		2AF24DFD1D06FE5000C93CBC /* TestNorenView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestNorenView2.xib; sourceTree = "<group>"; };
 		E96CDD411D05870500E5104B /* Noren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96CDD441D05870500E5104B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96CDD461D05870500E5104B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +204,15 @@
 			path = NorenNotificationTests;
 			sourceTree = "<group>";
 		};
+		2AF24DFF1D06FE6400C93CBC /* TestNorenView2 */ = {
+			isa = PBXGroup;
+			children = (
+				2AF24DFB1D06FDF500C93CBC /* TestNorenView2.swift */,
+				2AF24DFD1D06FE5000C93CBC /* TestNorenView2.xib */,
+			);
+			name = TestNorenView2;
+			sourceTree = "<group>";
+		};
 		E96CDD381D05870500E5104B = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +242,9 @@
 			children = (
 				E96CDD441D05870500E5104B /* AppDelegate.swift */,
 				E96CDD461D05870500E5104B /* ViewController.swift */,
+				2AF24DF91D06FCDA00C93CBC /* CircledImageView.swift */,
 				2AF24D931D06B69600C93CBC /* TestNorenView */,
+				2AF24DFF1D06FE6400C93CBC /* TestNorenView2 */,
 				E96CDD481D05870600E5104B /* Main.storyboard */,
 				2AF24D921D06AFF100C93CBC /* Noren */,
 				E96CDD4B1D05870600E5104B /* Assets.xcassets */,
@@ -432,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF24DFE1D06FE5000C93CBC /* TestNorenView2.xib in Resources */,
 				2AF24D911D06AEF000C93CBC /* TestView.xib in Resources */,
 				E96CDD4F1D05870600E5104B /* LaunchScreen.storyboard in Resources */,
 				E96CDD4C1D05870600E5104B /* Assets.xcassets in Resources */,
@@ -479,11 +497,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF24DFC1D06FDF500C93CBC /* TestNorenView2.swift in Sources */,
 				2AF24D8F1D06AEE300C93CBC /* TestView.swift in Sources */,
 				E96CDD771D05897200E5104B /* NorenManager.swift in Sources */,
 				E96CDD731D05877C00E5104B /* UIImageView+Extension.swift in Sources */,
 				E96CDD791D058B1B00E5104B /* Noren.swift in Sources */,
 				E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */,
+				2AF24DFA1D06FCDA00C93CBC /* CircledImageView.swift in Sources */,
 				E96CDD471D05870600E5104B /* ViewController.swift in Sources */,
 				E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */,
 			);
@@ -780,6 +800,7 @@
 				2AF24DB21D06C48000C93CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AF24DB41D06C48000C93CBC /* Build configuration list for PBXNativeTarget "NorenNotificationTests" */ = {
 			isa = XCConfigurationList;
@@ -788,6 +809,7 @@
 				2AF24DB61D06C48000C93CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E96CDD3C1D05870500E5104B /* Build configuration list for PBXProject "Noren" */ = {
 			isa = XCConfigurationList;
