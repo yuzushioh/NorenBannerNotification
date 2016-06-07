@@ -37,3 +37,6 @@ It is really easy to use! 3 steps and it's good to go :)
 
 ##Pull Requests?
 Absolutely!
+
+##License
+__NorenNotification__ is available under the MIT license. See LICENSE.txt for details.
