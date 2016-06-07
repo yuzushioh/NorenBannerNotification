@@ -2,6 +2,9 @@
 __NorenNotification__ is the all customisable and easy-to-setup in-app notification library for iOS developers and designers
 who want to implement the best in-app notification in minutes.
 
+![Instagram-Like Notification](http://i.imgur.com/5jlpTL0.png, "サンプル画像")
+![Facebook-Like Notification](http://i.imgur.com/Mj5yHrU.png, "サンプル画像2")
+
 ## Requirements
 
 - Swift 2.2+
