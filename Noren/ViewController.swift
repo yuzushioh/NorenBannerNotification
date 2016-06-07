@@ -21,13 +21,13 @@ class ViewController: UIViewController {
     
     private func showNoren() {
         let testView = TestView.createTestView()
-        let view = NorenManager.sharedManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
+        let view = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
         
         view
             .onTap {
                 print("Tapped")
             }
-            .show(2.0)
+            .show(duration: 2.0)
     }
 
     @IBAction func showNorenViewTapped(sender: AnyObject) {

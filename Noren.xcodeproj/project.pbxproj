@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		2AF24D8F1D06AEE300C93CBC /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF24D8E1D06AEE300C93CBC /* TestView.swift */; };
 		2AF24D911D06AEF000C93CBC /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF24D901D06AEF000C93CBC /* TestView.xib */; };
+		2AF24D9C1D06C48000C93CBC /* NorenNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF24D9B1D06C48000C93CBC /* NorenNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF24DA31D06C48000C93CBC /* NorenNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF24D991D06C48000C93CBC /* NorenNotification.framework */; };
+		2AF24DAA1D06C48000C93CBC /* NorenNotificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF24DA91D06C48000C93CBC /* NorenNotificationTests.swift */; };
+		2AF24DAE1D06C48000C93CBC /* NorenNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF24D991D06C48000C93CBC /* NorenNotification.framework */; };
+		2AF24DAF1D06C48000C93CBC /* NorenNotification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF24D991D06C48000C93CBC /* NorenNotification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2AF24DB71D06C48900C93CBC /* Noren.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD781D058B1B00E5104B /* Noren.swift */; };
+		2AF24DB81D06C48900C93CBC /* NorenViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD741D05892400E5104B /* NorenViewType.swift */; };
+		2AF24DB91D06C48900C93CBC /* NorenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD761D05897200E5104B /* NorenManager.swift */; };
+		2AF24DBA1D06C48E00C93CBC /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */; };
 		E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD441D05870500E5104B /* AppDelegate.swift */; };
 		E96CDD471D05870600E5104B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD461D05870500E5104B /* ViewController.swift */; };
 		E96CDD4A1D05870600E5104B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96CDD481D05870600E5104B /* Main.storyboard */; };
@@ -23,6 +32,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2AF24DA41D06C48000C93CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96CDD391D05870500E5104B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AF24D981D06C48000C93CBC;
+			remoteInfo = NorenNotification;
+		};
+		2AF24DA61D06C48000C93CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96CDD391D05870500E5104B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96CDD401D05870500E5104B;
+			remoteInfo = Noren;
+		};
+		2AF24DAC1D06C48000C93CBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96CDD391D05870500E5104B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AF24D981D06C48000C93CBC;
+			remoteInfo = NorenNotification;
+		};
 		E96CDD561D05870600E5104B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E96CDD391D05870500E5104B /* Project object */;
@@ -39,9 +69,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2AF24DB31D06C48000C93CBC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2AF24DAF1D06C48000C93CBC /* NorenNotification.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2AF24D8E1D06AEE300C93CBC /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		2AF24D901D06AEF000C93CBC /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		2AF24D991D06C48000C93CBC /* NorenNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NorenNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF24D9B1D06C48000C93CBC /* NorenNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NorenNotification.h; sourceTree = "<group>"; };
+		2AF24D9D1D06C48000C93CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AF24DA21D06C48000C93CBC /* NorenNotificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorenNotificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AF24DA91D06C48000C93CBC /* NorenNotificationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenNotificationTests.swift; sourceTree = "<group>"; };
+		2AF24DAB1D06C48000C93CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E96CDD411D05870500E5104B /* Noren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96CDD441D05870500E5104B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96CDD461D05870500E5104B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,10 +112,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2AF24D951D06C48000C93CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF24D9F1D06C48000C93CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF24DA31D06C48000C93CBC /* NorenNotification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E96CDD3E1D05870500E5104B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AF24DAE1D06C48000C93CBC /* NorenNotification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +180,32 @@
 			name = TestNorenView;
 			sourceTree = "<group>";
 		};
+		2AF24D9A1D06C48000C93CBC /* NorenNotification */ = {
+			isa = PBXGroup;
+			children = (
+				2AF24D9B1D06C48000C93CBC /* NorenNotification.h */,
+				2AF24D9D1D06C48000C93CBC /* Info.plist */,
+			);
+			path = NorenNotification;
+			sourceTree = "<group>";
+		};
+		2AF24DA81D06C48000C93CBC /* NorenNotificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AF24DA91D06C48000C93CBC /* NorenNotificationTests.swift */,
+				2AF24DAB1D06C48000C93CBC /* Info.plist */,
+			);
+			path = NorenNotificationTests;
+			sourceTree = "<group>";
+		};
 		E96CDD381D05870500E5104B = {
 			isa = PBXGroup;
 			children = (
 				E96CDD431D05870500E5104B /* Noren */,
 				E96CDD581D05870600E5104B /* NorenTests */,
 				E96CDD631D05870600E5104B /* NorenUITests */,
+				2AF24D9A1D06C48000C93CBC /* NorenNotification */,
+				2AF24DA81D06C48000C93CBC /* NorenNotificationTests */,
 				E96CDD421D05870500E5104B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,6 +216,8 @@
 				E96CDD411D05870500E5104B /* Noren.app */,
 				E96CDD551D05870600E5104B /* NorenTests.xctest */,
 				E96CDD601D05870600E5104B /* NorenUITests.xctest */,
+				2AF24D991D06C48000C93CBC /* NorenNotification.framework */,
+				2AF24DA21D06C48000C93CBC /* NorenNotificationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +257,55 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2AF24D961D06C48000C93CBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF24D9C1D06C48000C93CBC /* NorenNotification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2AF24D981D06C48000C93CBC /* NorenNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF24DB01D06C48000C93CBC /* Build configuration list for PBXNativeTarget "NorenNotification" */;
+			buildPhases = (
+				2AF24D941D06C48000C93CBC /* Sources */,
+				2AF24D951D06C48000C93CBC /* Frameworks */,
+				2AF24D961D06C48000C93CBC /* Headers */,
+				2AF24D971D06C48000C93CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NorenNotification;
+			productName = NorenNotification;
+			productReference = 2AF24D991D06C48000C93CBC /* NorenNotification.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2AF24DA11D06C48000C93CBC /* NorenNotificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF24DB41D06C48000C93CBC /* Build configuration list for PBXNativeTarget "NorenNotificationTests" */;
+			buildPhases = (
+				2AF24D9E1D06C48000C93CBC /* Sources */,
+				2AF24D9F1D06C48000C93CBC /* Frameworks */,
+				2AF24DA01D06C48000C93CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AF24DA51D06C48000C93CBC /* PBXTargetDependency */,
+				2AF24DA71D06C48000C93CBC /* PBXTargetDependency */,
+			);
+			name = NorenNotificationTests;
+			productName = NorenNotificationTests;
+			productReference = 2AF24DA21D06C48000C93CBC /* NorenNotificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E96CDD401D05870500E5104B /* Noren */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E96CDD691D05870600E5104B /* Build configuration list for PBXNativeTarget "Noren" */;
@@ -177,10 +313,12 @@
 				E96CDD3D1D05870500E5104B /* Sources */,
 				E96CDD3E1D05870500E5104B /* Frameworks */,
 				E96CDD3F1D05870500E5104B /* Resources */,
+				2AF24DB31D06C48000C93CBC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2AF24DAD1D06C48000C93CBC /* PBXTargetDependency */,
 			);
 			name = Noren;
 			productName = Noren;
@@ -233,6 +371,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = yuzushioh;
 				TargetAttributes = {
+					2AF24D981D06C48000C93CBC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2AF24DA11D06C48000C93CBC = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E96CDD401D05870500E5104B;
+					};
 					E96CDD401D05870500E5104B = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -262,11 +407,27 @@
 				E96CDD401D05870500E5104B /* Noren */,
 				E96CDD541D05870600E5104B /* NorenTests */,
 				E96CDD5F1D05870600E5104B /* NorenUITests */,
+				2AF24D981D06C48000C93CBC /* NorenNotification */,
+				2AF24DA11D06C48000C93CBC /* NorenNotificationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2AF24D971D06C48000C93CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF24DA01D06C48000C93CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E96CDD3F1D05870500E5104B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +456,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2AF24D941D06C48000C93CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF24DB71D06C48900C93CBC /* Noren.swift in Sources */,
+				2AF24DB81D06C48900C93CBC /* NorenViewType.swift in Sources */,
+				2AF24DBA1D06C48E00C93CBC /* UIImageView+Extension.swift in Sources */,
+				2AF24DB91D06C48900C93CBC /* NorenManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AF24D9E1D06C48000C93CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF24DAA1D06C48000C93CBC /* NorenNotificationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E96CDD3D1D05870500E5104B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +508,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2AF24DA51D06C48000C93CBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AF24D981D06C48000C93CBC /* NorenNotification */;
+			targetProxy = 2AF24DA41D06C48000C93CBC /* PBXContainerItemProxy */;
+		};
+		2AF24DA71D06C48000C93CBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96CDD401D05870500E5104B /* Noren */;
+			targetProxy = 2AF24DA61D06C48000C93CBC /* PBXContainerItemProxy */;
+		};
+		2AF24DAD1D06C48000C93CBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AF24D981D06C48000C93CBC /* NorenNotification */;
+			targetProxy = 2AF24DAC1D06C48000C93CBC /* PBXContainerItemProxy */;
+		};
 		E96CDD571D05870600E5104B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E96CDD401D05870500E5104B /* Noren */;
@@ -360,6 +555,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2AF24DB11D06C48000C93CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NorenNotification/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2AF24DB21D06C48000C93CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = NorenNotification/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2AF24DB51D06C48000C93CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NorenNotificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noren.app/Noren";
+			};
+			name = Debug;
+		};
+		2AF24DB61D06C48000C93CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NorenNotificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noren.app/Noren";
+			};
+			name = Release;
+		};
 		E96CDD671D05870600E5104B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -447,6 +704,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Noren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.Noren;
@@ -458,6 +716,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Noren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.Noren;
@@ -514,6 +773,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2AF24DB01D06C48000C93CBC /* Build configuration list for PBXNativeTarget "NorenNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF24DB11D06C48000C93CBC /* Debug */,
+				2AF24DB21D06C48000C93CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2AF24DB41D06C48000C93CBC /* Build configuration list for PBXNativeTarget "NorenNotificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AF24DB51D06C48000C93CBC /* Debug */,
+				2AF24DB61D06C48000C93CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E96CDD3C1D05870500E5104B /* Build configuration list for PBXProject "Noren" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

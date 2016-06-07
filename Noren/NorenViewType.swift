@@ -21,8 +21,7 @@ extension NorenViewType where Self: UIView {
         var noren = self
         
         noren.onTap = {
-            NorenManager.sharedManager
-                .dismissNorenView({ _ in
+            NorenManager.dismissNorenView({ _ in
                     onTap()
                 }, duration: 1.0)
         }
@@ -34,15 +33,15 @@ extension NorenViewType where Self: UIView {
         var noren = self
         
         noren.onTap = {
-            NorenManager.sharedManager.dismissNorenView(duration: 1.0)
+            NorenManager.dismissNorenView(duration: 1.0)
         }
         
         return noren
     }
     
-    func show(duration: NSTimeInterval) {
+    func show(duration duration: NSTimeInterval) {
         let noren = self
         
-        NorenManager.sharedManager.showNorenView(noren, duration: duration)
+        NorenManager.showNorenView(noren, duration: duration)
     }
 }

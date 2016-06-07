@@ -1,0 +1,10 @@
+framework module NorenNotification {
+  umbrella header "NorenNotification.h"
+
+  export *
+  module * { export * }
+}
+
+module NorenNotification.Swift {
+    header "NorenNotification-Swift.h"
+}

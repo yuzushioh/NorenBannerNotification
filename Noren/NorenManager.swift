@@ -9,32 +9,28 @@
 import Foundation
 import UIKit
 
-class NorenManager: NSObject {
+public class NorenManager: NSObject {
     
-    private var activeNorenView: UIView?
-    
-    static let sharedManager = NorenManager()
-    
-    func createNorenView<V: NorenViewType>(customView: V, norenInformation: NorenInformation) -> V {
+    static func createNorenView<V: NorenViewType>(customView: V, norenInformation: NorenInformation) -> V {
         var customView = customView
         customView.norenInfomation = norenInformation
         
         return customView
     }
     
-    func showNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
-        dispatch_async(dispatch_get_main_queue()) { [weak self] in
-            if self?.isNorenViewShown() == true {
-                self?.dismissNorenView({ [weak self] _ in
-                    self?.displayNorenView(norenView, duration: duration)
+    static func showNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
+        dispatch_async(dispatch_get_main_queue()) {
+            if self.isNorenViewShown() == true {
+                self.dismissNorenView({
+                    self.displayNorenView(norenView, duration: duration)
                     }, duration: duration)
             } else {
-                self?.displayNorenView(norenView, duration: duration)
+                self.displayNorenView(norenView, duration: duration)
             }
         }
     }
     
-    func dismissNorenView(dismissHandler: NorenOperationHandler? = nil, duration: NSTimeInterval) {
+    static func dismissNorenView(dismissHandler: NorenOperationHandler? = nil, duration: NSTimeInterval) {
         guard let activeNorenView = self.activeNorenView else { return }
         let offScreenPoint = CGPoint(x: activeNorenView.center.x, y: -activeNorenView.frame.height/2)
         
@@ -45,24 +41,26 @@ class NorenManager: NSObject {
         UIApplication.sharedApplication().delegate?.window??.windowLevel = UIWindowLevelNormal
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.5 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue(), { [weak self] () -> Void in
+        dispatch_after(delayTime, dispatch_get_main_queue(), {
             activeNorenView.removeFromSuperview()
             
-            if self?.activeNorenView == activeNorenView {
-                self?.activeNorenView = nil
+            if self.activeNorenView == activeNorenView {
+                self.activeNorenView = nil
             }
             
             dismissHandler?()
         })
     }
     
-    private let animationDuration = 0.3
+    private static var activeNorenView: UIView?
     
-    private func isNorenViewShown() -> Bool {
+    private static let animationDuration = 0.3
+    
+    private static func isNorenViewShown() -> Bool {
         return activeNorenView != nil
     }
     
-    private func dismissCurrentNorenView(dismissHandler: NorenOperationHandler?, duration: NSTimeInterval) {
+    private static func dismissCurrentNorenView(dismissHandler: NorenOperationHandler?, duration: NSTimeInterval) {
         if isNorenViewShown() {
             dismissNorenView({ _ in
                 dismissHandler?()
@@ -70,7 +68,7 @@ class NorenManager: NSObject {
         }
     }
     
-    private func displayNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
+    private static func displayNorenView<V: UIView where V: NorenViewType>(norenView: V, duration: NSTimeInterval) {
         self.activeNorenView = norenView
         
         guard let mainWindow = UIApplication.sharedApplication().keyWindow else { return }
@@ -95,8 +93,8 @@ class NorenManager: NSObject {
             completion: nil)
         
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(duration * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue(), { [weak self] () -> Void in
-            self?.dismissNorenView(nil, duration: duration)
+        dispatch_after(delayTime, dispatch_get_main_queue(), {
+            self.dismissNorenView(nil, duration: duration)
         })
 
     }
