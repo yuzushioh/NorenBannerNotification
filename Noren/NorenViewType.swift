@@ -9,22 +9,40 @@
 import Foundation
 import UIKit
 
+typealias NorenOperationHandler = (Void -> Void)
+
 protocol NorenViewType {
-    var norenInfomation: NorenInformation { get }
-    
-    static func createNorenView<V: NorenViewType where V: UIView>(customView: V, noren: NorenInformation) -> V
+    var norenInfomation: NorenInformation? { get set }
+    var onTap: NorenOperationHandler? { get set }
 }
 
 extension NorenViewType where Self: UIView {
-    func onTap<N: NorenViewType where N: UIView>() -> N {
-        let noren = self as! N
+    func onTap(onTap: NorenOperationHandler) -> Self {
+        var noren = self
+        
+        noren.onTap = {
+            NorenManager.sharedManager
+                .dismissNorenView({ _ in
+                    onTap()
+                }, duration: 1.0)
+        }
         
         return noren
     }
     
-    func displayTime<N: NorenViewType where N: UIView>() -> N {
-        let noren = self as! N
+    func onTapDismiss() -> Self {
+        var noren = self
+        
+        noren.onTap = {
+            NorenManager.sharedManager.dismissNorenView(duration: 1.0)
+        }
         
         return noren
+    }
+    
+    func show(duration: NSTimeInterval) {
+        let noren = self
+        
+        NorenManager.sharedManager.showNorenView(noren, duration: duration)
     }
 }
