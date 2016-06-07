@@ -36,6 +36,16 @@ It is really easy to use! 3 steps and it's good to go :)
       .show(duration: 2.0)
 ```
 
+You can give as much detailed information as this to display on the NorenNotification view! Very Useful, Right?
+```swift
+struct NorenInformation {
+    let title: String?
+    let username: String?
+    let body: String
+    let imageUrl: String?
+}
+```
+
 ##Pull Requests?
 Absolutely!
 
