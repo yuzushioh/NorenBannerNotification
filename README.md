@@ -30,8 +30,9 @@ It is really easy to use! 3 steps and it's good to go :)
 3. Create a NorenView and define what you want to do when on tap and how long you want it to be displayed.
    You can set either 'onTap' or 'onTapDismiss' method to your view. At the end, you have to set 'show()' to display.
 ```swift
-  let norenView = NorenManager.createNorenView(designedView, norenInformation: NorenInformation(body: "You have new messages"))
-                                              //Your designed view comes here. *It has to comform to `NorenViewType`
+  let norenInformation = NorenInformation(body: "You have new messages")
+  let norenView = NorenManager.createNorenView(designedView, norenInformation: norenInformation)
+                                  //Your designed view comes here. *has to comform to `NorenViewType`
   norenView 
       .onTap {
         //implement what you want to do when on tap here.
