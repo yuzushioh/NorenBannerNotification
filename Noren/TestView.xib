@@ -10,7 +10,31 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TestView" customModule="Noren" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.81960784310000001" green="0.25490196079999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your notification body message comes here! You can put username, title, body, and profileImage" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jl8-g3-71b">
+                    <rect key="frame" x="20" y="27" width="335" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Japanese Noren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-YT-yIQ">
+                    <rect key="frame" x="20" y="8" width="101" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="XLQ-CH-jua"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CV6-YT-yIQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="5fi-Qm-pWO"/>
+                <constraint firstAttribute="bottom" secondItem="Jl8-g3-71b" secondAttribute="bottom" constant="8" id="7yi-lh-Jha"/>
+                <constraint firstItem="Jl8-g3-71b" firstAttribute="top" secondItem="CV6-YT-yIQ" secondAttribute="bottom" constant="3" id="Lcy-SL-AoC"/>
+                <constraint firstAttribute="trailing" secondItem="Jl8-g3-71b" secondAttribute="trailing" constant="20" id="TB1-rV-Y1t"/>
+                <constraint firstItem="Jl8-g3-71b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fFO-R9-fu6"/>
+                <constraint firstItem="CV6-YT-yIQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ums-v5-xNQ"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="796.5" y="376"/>

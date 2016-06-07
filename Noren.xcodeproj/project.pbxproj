@@ -105,6 +105,15 @@
 			name = Noren;
 			sourceTree = "<group>";
 		};
+		2AF24D931D06B69600C93CBC /* TestNorenView */ = {
+			isa = PBXGroup;
+			children = (
+				2AF24D8E1D06AEE300C93CBC /* TestView.swift */,
+				2AF24D901D06AEF000C93CBC /* TestView.xib */,
+			);
+			name = TestNorenView;
+			sourceTree = "<group>";
+		};
 		E96CDD381D05870500E5104B = {
 			isa = PBXGroup;
 			children = (
@@ -130,8 +139,7 @@
 			children = (
 				E96CDD441D05870500E5104B /* AppDelegate.swift */,
 				E96CDD461D05870500E5104B /* ViewController.swift */,
-				2AF24D8E1D06AEE300C93CBC /* TestView.swift */,
-				2AF24D901D06AEF000C93CBC /* TestView.xib */,
+				2AF24D931D06B69600C93CBC /* TestNorenView */,
 				E96CDD481D05870600E5104B /* Main.storyboard */,
 				2AF24D921D06AFF100C93CBC /* Noren */,
 				E96CDD4B1D05870600E5104B /* Assets.xcassets */,
