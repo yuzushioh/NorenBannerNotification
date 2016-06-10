@@ -20,14 +20,14 @@ public extension NorenViewType where Self: UIView {
     
     public func onTap(onTap: NorenOperationHandler) -> Self {
         var noren = self
-        noren.onTap = { NorenManager.dismissNorenView({ onTap() }, duration: 1.0) }
+        noren.onTap = { NorenManager.dismissNorenView({ onTap() }) }
         
         return noren
     }
     
     public func onTapDismiss() -> Self {
         var noren = self
-        noren.onTap = { NorenManager.dismissNorenView(duration: 1.0) }
+        noren.onTap = { NorenManager.dismissNorenView() }
         
         return noren
     }
