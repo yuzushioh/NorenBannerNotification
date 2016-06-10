@@ -13,7 +13,7 @@ who want to implement the best in-app notification in minutes.
 ##Installation
 #### [Carthage](https://github.com/Carthage/Carthage)
 
-- Insert `github "yuzushioh/Noren" ~> 1.0.1` to your Cartfile.
+- Insert `github "yuzushioh/Noren" ~> 1.1.1` to your Cartfile.
 - Run `carthage update --platform iOS`.
 - Link your app with `NorenNotification.framework`.
 
@@ -25,7 +25,6 @@ It is really easy to use! 3 steps and it's good to go :)
 
   __protocol NorenViewType has two properties__
   - `norenInformation`
-  - `onTap`
 
 3. Create a NorenView and define what you want to do when on tap and how long you want it to be displayed.
    You can set either 'onTap' or 'onTapDismiss' method to your view. At the end, you have to set 'show()' to display.
@@ -37,6 +36,7 @@ It is really easy to use! 3 steps and it's good to go :)
       .onTap {
         //implement what you want to do when on tap here.
       }
+      .onSwipeUpDismiss()
       .show(duration: 2.0)
 ```
 
