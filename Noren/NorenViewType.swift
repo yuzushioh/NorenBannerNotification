@@ -15,10 +15,6 @@ public protocol NorenViewType: class {
 
 public extension NorenViewType where Self: UIView {
     
-    public var view: UIView {
-        return self
-    }
-    
     public func onTap(onTap: (Void -> Void)) -> Self {
         let noren = self
         

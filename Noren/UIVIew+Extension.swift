@@ -11,10 +11,10 @@ import UIKit
 
 public extension UIView {
     
-    typealias TapResponseClosure = (tap: UITapGestureRecognizer) -> Void
-    typealias SwipeResponseClosure = (swipe: UISwipeGestureRecognizer) -> Void
+    public typealias TapResponseClosure = (tap: UITapGestureRecognizer) -> Void
+    public typealias SwipeResponseClosure = (swipe: UISwipeGestureRecognizer) -> Void
     
-    private struct ClosureStore {
+    public struct ClosureStore {
         static var TapClosureStore: [UITapGestureRecognizer : TapResponseClosure] = [:]
         static var SwipeClosureStorage: [UISwipeGestureRecognizer : SwipeResponseClosure] = [:]
     }
@@ -33,7 +33,7 @@ public extension UIView {
         ClosureStore.TapClosureStore[tap] = responder
     }
     
-    @objc private func handleTap(sender: UITapGestureRecognizer) {
+    @objc func handleTap(sender: UITapGestureRecognizer) {
         if let closureForTap = ClosureStore.TapClosureStore[sender] {
             closureForTap(tap: sender)
         }
@@ -57,7 +57,7 @@ public extension UIView {
         ClosureStore.SwipeClosureStorage[swipe] = responder
     }
     
-    @objc private func handleSwipe(sender: UISwipeGestureRecognizer) {
+    @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if let closureForSwipe = ClosureStore.SwipeClosureStorage[sender] {
             closureForSwipe(swipe: sender)
         }
