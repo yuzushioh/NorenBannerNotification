@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3894CF1D0A966B00862600 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3894CE1D0A966B00862600 /* UIVIew+Extension.swift */; };
+		2A3894D01D0A967C00862600 /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3894CE1D0A966B00862600 /* UIVIew+Extension.swift */; };
 		2AF24D8F1D06AEE300C93CBC /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF24D8E1D06AEE300C93CBC /* TestView.swift */; };
 		2AF24D911D06AEF000C93CBC /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF24D901D06AEF000C93CBC /* TestView.xib */; };
 		2AF24D9C1D06C48000C93CBC /* NorenNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AF24D9B1D06C48000C93CBC /* NorenNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -87,6 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A3894CE1D0A966B00862600 /* UIVIew+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
 		2AF24D8E1D06AEE300C93CBC /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		2AF24D901D06AEF000C93CBC /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		2AF24D991D06C48000C93CBC /* NorenNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NorenNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				E96CDD721D05877C00E5104B /* UIImageView+Extension.swift */,
+				2A3894CE1D0A966B00862600 /* UIVIew+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -481,6 +485,7 @@
 				2AF24DB71D06C48900C93CBC /* Noren.swift in Sources */,
 				2AF24DB81D06C48900C93CBC /* NorenViewType.swift in Sources */,
 				2AF24DBA1D06C48E00C93CBC /* UIImageView+Extension.swift in Sources */,
+				2A3894D01D0A967C00862600 /* UIVIew+Extension.swift in Sources */,
 				2AF24DB91D06C48900C93CBC /* NorenManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +510,7 @@
 				E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */,
 				2AF24DFA1D06FCDA00C93CBC /* CircledImageView.swift in Sources */,
 				E96CDD471D05870600E5104B /* ViewController.swift in Sources */,
+				2A3894CF1D0A966B00862600 /* UIVIew+Extension.swift in Sources */,
 				E96CDD451D05870500E5104B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

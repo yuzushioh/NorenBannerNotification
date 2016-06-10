@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-extension UIImageView {
-    func fromUrl(url: String) {
+public extension UIImageView {
+    public func fromUrl(url: String) {
         guard let url = NSURL(string: url) else { return }
         
         NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
