@@ -12,18 +12,6 @@ class TestView: UIView, NorenViewType {
     
     //Protocol
     var norenInfomation: NorenInformation?
-    var onTap: (Void -> Void)?
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
-        addGestureRecognizer(tapGesture)
-    }
-    
-    func handleTapGesture(gesture: UITapGestureRecognizer) {
-        onTap?()
-    }
     
     class func createTestView() -> TestView {
         let notificationView = UINib(nibName: "TestView", bundle: nil)

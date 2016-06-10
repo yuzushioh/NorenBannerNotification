@@ -32,9 +32,19 @@ public extension NorenViewType where Self: UIView {
     public func onTapDismiss() -> Self {
         let noren = self
         
-        noren.addSingleTapGestureRecognizerWithResponder({ gesture in
+        noren.addSingleTapGestureRecognizerWithResponder { (tap) in
             NorenManager.dismissNorenView()
-        })
+        }
+        
+        return noren
+    }
+    
+    public func onSwipeUpDismiss() -> Self {
+        let noren = self
+        
+        noren.addSwipeUpGestureRecognizerWithResponder { (swipe) in
+            NorenManager.dismissNorenView()
+        }
         
         return noren
     }

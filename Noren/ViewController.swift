@@ -28,6 +28,7 @@ class ViewController: UIViewController {
             .onTap {
                 print("Tapされました")
             }
+            .onSwipeUpDismiss()
             .show(duration: 2.0)
     }
     

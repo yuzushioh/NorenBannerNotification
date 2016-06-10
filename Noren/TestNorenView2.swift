@@ -12,7 +12,6 @@ class TestNorenView2: UIView, NorenViewType {
     
     //Protocol
     var norenInfomation: NorenInformation?
-    var onTap: (Void -> Void)?
     
     @IBOutlet weak var underBar: UILabel!
     
@@ -21,13 +20,6 @@ class TestNorenView2: UIView, NorenViewType {
         
         underBar.layer.cornerRadius = 4
         underBar.clipsToBounds = true
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture(_:)))
-        addGestureRecognizer(tapGesture)
-    }
-    
-    func handleTapGesture(gesture: UITapGestureRecognizer) {
-        onTap?()
     }
     
     class func createTestView() -> TestNorenView2 {
