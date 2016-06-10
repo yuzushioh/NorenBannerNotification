@@ -16,7 +16,7 @@ public extension UIView {
     
     public struct ClosureStore {
         static var TapClosureStore: [UITapGestureRecognizer : TapResponseClosure] = [:]
-        static var SwipeClosureStorage: [UISwipeGestureRecognizer : SwipeResponseClosure] = [:]
+        static var SwipeClosureStore: [UISwipeGestureRecognizer : SwipeResponseClosure] = [:]
     }
     
     public func addSingleTapGestureRecognizerWithResponder(responder: TapResponseClosure) {
@@ -40,25 +40,21 @@ public extension UIView {
     }
     
     public func addSwipeUpGestureRecognizerWithResponder(responder: SwipeResponseClosure) {
-        self.addSwipeUpGestureRecognizerForNumberOfTouches(withResponder: responder)
+        self.addSwipeGestureRecognizerForNumberOfTouches(forSwipeDirection: .Up, withResponder: responder)
     }
     
-    private func addSwipeUpGestureRecognizerForNumberOfTouches(numberOfTouches: Int = 1, withResponder responder: SwipeResponseClosure) {
-        self.addSwipeGestureRecognizerForNumberOfTouches(numberOfTouches, forSwipeDirection: .Up, withResponder: responder)
-    }
-    
-    private func addSwipeGestureRecognizerForNumberOfTouches(numberOfTouches: Int, forSwipeDirection swipeDirection: UISwipeGestureRecognizerDirection, withResponder responder: SwipeResponseClosure) {
+    private func addSwipeGestureRecognizerForNumberOfTouches(numberOfTouches: Int = 1, forSwipeDirection swipeDirection: UISwipeGestureRecognizerDirection, withResponder responder: SwipeResponseClosure) {
         let swipe = UISwipeGestureRecognizer()
         swipe.direction = swipeDirection
         swipe.numberOfTouchesRequired = numberOfTouches
-        swipe.addTarget(self, action: #selector(handleTap(_:)))
+        swipe.addTarget(self, action: #selector(handleSwipe(_:)))
         self.addGestureRecognizer(swipe)
         
-        ClosureStore.SwipeClosureStorage[swipe] = responder
+        ClosureStore.SwipeClosureStore[swipe] = responder
     }
     
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
-        if let closureForSwipe = ClosureStore.SwipeClosureStorage[sender] {
+        if let closureForSwipe = ClosureStore.SwipeClosureStore[sender] {
             closureForSwipe(swipe: sender)
         }
     }

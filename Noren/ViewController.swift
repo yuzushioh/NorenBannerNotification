@@ -37,8 +37,8 @@ class ViewController: UIViewController {
         let norenView = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
         
         norenView
-            .onTapDismiss()
-            .show(duration: 2.0)
+            .onSwipeUpDismiss()
+            .show(duration: 5.0)
     }
 
     @IBAction func showNorenViewTapped(sender: AnyObject) {
