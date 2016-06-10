@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         norenView
             .onTap {
-                print("Tapped")
+                print("Tapされました")
             }
             .show(duration: 2.0)
     }

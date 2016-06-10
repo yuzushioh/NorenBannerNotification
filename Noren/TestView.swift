@@ -12,7 +12,7 @@ class TestView: UIView, NorenViewType {
     
     //Protocol
     var norenInfomation: NorenInformation?
-    var onTap: NorenOperationHandler?
+    var onTap: (Void -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()

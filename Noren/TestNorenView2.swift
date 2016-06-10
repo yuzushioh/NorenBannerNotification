@@ -12,7 +12,7 @@ class TestNorenView2: UIView, NorenViewType {
     
     //Protocol
     var norenInfomation: NorenInformation?
-    var onTap: NorenOperationHandler?
+    var onTap: (Void -> Void)?
     
     @IBOutlet weak var underBar: UILabel!
     

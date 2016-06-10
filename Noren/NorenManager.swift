@@ -16,7 +16,7 @@ public final class NorenManager {
     static private let animationDuration = 0.3
     
     static public func createNorenView<V: NorenViewType>(customView: V, norenInformation: NorenInformation) -> V {
-        var customView = customView
+        let customView = customView
         customView.norenInfomation = norenInformation
         
         return customView
@@ -34,7 +34,7 @@ public final class NorenManager {
         }
     }
     
-    static public func dismissNorenView(dismissHandler: NorenOperationHandler? = nil) {
+    static public func dismissNorenView(dismissHandler: (Void -> Void)? = nil) {
         guard let norenView = activeNorenView else { return }
         let offScreenPoint = CGPoint(x: norenView.center.x, y: -norenView.frame.height/2)
         
@@ -61,7 +61,7 @@ public final class NorenManager {
         return activeNorenView != nil
     }
     
-    static private func dismissCurrentNorenView(dismissHandler: NorenOperationHandler?, duration: NSTimeInterval) {
+    static private func dismissCurrentNorenView(dismissHandler: (Void -> Void)?, duration: NSTimeInterval) {
         dismissNorenView(
             { _ in
                 dismissHandler?()

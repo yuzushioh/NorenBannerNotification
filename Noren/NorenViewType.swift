@@ -9,25 +9,32 @@
 import Foundation
 import UIKit
 
-public typealias NorenOperationHandler = (Void -> Void)
-
-public protocol NorenViewType {
+public protocol NorenViewType: class {
     var norenInfomation: NorenInformation? { get set }
-    var onTap: NorenOperationHandler? { get set }
 }
 
 public extension NorenViewType where Self: UIView {
     
-    public func onTap(onTap: NorenOperationHandler) -> Self {
-        var noren = self
-        noren.onTap = { NorenManager.dismissNorenView({ onTap() }) }
+    public var view: UIView {
+        return self
+    }
+    
+    public func onTap(onTap: (Void -> Void)) -> Self {
+        let noren = self
+        
+        noren.addSingleTapGestureRecognizerWithResponder({ gesture in
+            NorenManager.dismissNorenView({ onTap() })
+        })
         
         return noren
     }
     
     public func onTapDismiss() -> Self {
-        var noren = self
-        noren.onTap = { NorenManager.dismissNorenView() }
+        let noren = self
+        
+        noren.addSingleTapGestureRecognizerWithResponder({ gesture in
+            NorenManager.dismissNorenView()
+        })
         
         return noren
     }
