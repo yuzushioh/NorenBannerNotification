@@ -10,7 +10,6 @@ import UIKit
 
 class TestView: UIView, NorenViewType {
     
-    //Protocol
     var norenInfomation: NorenInformation?
     
     class func createTestView() -> TestView {
