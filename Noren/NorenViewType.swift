@@ -10,46 +10,36 @@ import Foundation
 import UIKit
 
 public protocol NorenViewType: class {
-    var norenInfomation: NorenInformation? { get set }
+    var bodyText: String? { get set }
 }
 
-public extension NorenViewType where Self: UIView {
+public extension NorenView {
     
-    public func onTap(onTap: (Void -> Void)) -> Self {
-        let noren = self
-        
-        noren.addSingleTapGestureRecognizerWithResponder({ gesture in
-            NorenManager.dismissNorenView({ onTap() })
-        })
-        
-        return noren
-    }
-    
-    public func onTapDismiss() -> Self {
-        let noren = self
-        
-        noren.addSingleTapGestureRecognizerWithResponder { (tap) in
-            print("TapGesture Detected")
-            NorenManager.dismissNorenView()
+    public func onTap(onTap: (Void -> Void)) -> NorenView {
+        self.addSingleTapGestureRecognizerWithResponder { gesture in
+            self.dismiss(onTap)
         }
         
-        return noren
+        return self
     }
     
-    public func onSwipeUpDismiss() -> Self {
-        let noren = self
-        
-        noren.addSwipeUpGestureRecognizerWithResponder { (swipe) in
-            print("SwipeGesture Detected")
-            NorenManager.dismissNorenView()
+    public func onTapDismiss() -> NorenView {
+        self.addSingleTapGestureRecognizerWithResponder { tap in
+            self.dismiss()
         }
         
-        return noren
+        return self
+    }
+    
+    public func onSwipeUpDismiss() -> NorenView {
+        self.addSwipeUpGestureRecognizerWithResponder { swipe in
+            self.dismiss()
+        }
+        
+        return self
     }
     
     public func show(duration duration: NSTimeInterval) {
-        let noren = self
-        
-        NorenManager.showNorenView(noren, duration: duration)
+        self.present(duration)
     }
 }
