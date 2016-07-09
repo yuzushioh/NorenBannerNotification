@@ -1,17 +1,12 @@
 //
-//  NorenViewType.swift
+//  NorenView+Ex.swift
 //  Noren
 //
 //  Created by mercari on 6/6/16.
 //  Copyright © 2016 yuzushioh. All rights reserved.
 //
 
-import Foundation
 import UIKit
-
-public protocol NorenViewType: class {
-    var bodyText: String? { get set }
-}
 
 public extension NorenView {
     

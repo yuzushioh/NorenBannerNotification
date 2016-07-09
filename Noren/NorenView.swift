@@ -8,7 +8,8 @@
 
 import UIKit
 
-public class NorenView: UIWindow, NorenViewType {
+public class NorenView: UIWindow {
+    
     public var bodyText: String?
     
     private static var activeNorenWindoww: UIWindow?
@@ -26,7 +27,7 @@ public class NorenView: UIWindow, NorenViewType {
         frame.origin.y = -frame.size.height
         layoutIfNeeded()
         
-        frame.origin.y = frame.size.height
+        frame.origin.y = 64
         
         animate(
             animations: {
@@ -43,7 +44,7 @@ public class NorenView: UIWindow, NorenViewType {
     
     public func dismiss(onTap: (Void -> Void)? = nil) {
         
-        frame.origin.y = -frame.size.height
+        frame.origin.y = -64
         
         animate(
             animations: {
