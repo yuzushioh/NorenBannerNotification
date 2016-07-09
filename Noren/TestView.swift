@@ -10,4 +10,11 @@ import UIKit
 
 class TestView: NorenView {
     
+    @IBOutlet weak var bodyTextLabel: UILabel!
+    
+    override var bodyText: String? {
+        didSet {
+            bodyTextLabel.text = bodyText
+        }
+    }
 }

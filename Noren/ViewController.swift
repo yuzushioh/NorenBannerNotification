@@ -34,8 +34,9 @@ class ViewController: UIViewController {
         let testView = TestNorenView2.presentNorenViewWithText("Main body text comes here", nibName: "TestNorenView2")
         
         testView
+            .onTapDismiss()
             .onSwipeUpDismiss()
-            .show(duration: 5.0)
+            .show(duration: 2.0)
     }
 
     @IBAction func showNorenViewTapped(sender: AnyObject) {

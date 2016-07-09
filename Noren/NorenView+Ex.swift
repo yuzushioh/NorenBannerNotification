@@ -9,7 +9,6 @@
 import UIKit
 
 public extension NorenView {
-    
     public func onTap(onTap: (Void -> Void)) -> NorenView {
         self.addSingleTapGestureRecognizerWithResponder { gesture in
             self.dismiss(onTap)

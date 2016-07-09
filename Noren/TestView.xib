@@ -47,7 +47,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="0.55000000000000004" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Jl8-g3-71b" firstAttribute="top" secondItem="CV6-YT-yIQ" secondAttribute="bottom" constant="4" id="6pV-Db-x4A"/>
                 <constraint firstAttribute="bottom" secondItem="ueZ-mL-pm1" secondAttribute="bottom" constant="10" id="Bju-ed-4as"/>
@@ -60,6 +60,9 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bodyTextLabel" destination="Jl8-g3-71b" id="THC-3M-ZG9"/>
+            </connections>
             <point key="canvasLocation" x="687.5" y="241"/>
         </view>
     </objects>

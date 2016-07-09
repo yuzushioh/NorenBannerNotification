@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 public class NorenView: UIWindow {
     
@@ -21,33 +22,32 @@ public class NorenView: UIWindow {
     }
     
     public func present(duration: NSTimeInterval) {
+        AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+        
         NorenView.activeNorenWindoww = self
         
         frame.size.width = UIScreen.mainScreen().bounds.width
         frame.origin.y = -frame.size.height
         layoutIfNeeded()
         
-        frame.origin.y = 64
-        
         animate(
             animations: {
+                self.frame.origin.y = 0
                 self.layoutIfNeeded()
             },
             completion: { finished in
                 let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(duration * Double(NSEC_PER_SEC)))
-                dispatch_after(delayTime, dispatch_get_main_queue(), { _ in
-                    self.dismiss()
+                dispatch_after(delayTime, dispatch_get_main_queue(), { [weak self] _ in
+                    self?.dismiss()
                 })
             }
         )
     }
     
     public func dismiss(onTap: (Void -> Void)? = nil) {
-        
-        frame.origin.y = -64
-        
         animate(
             animations: {
+                self.frame.origin.y = -self.frame.size.height
                 self.layoutIfNeeded()
             },
             completion: { finished in
@@ -62,7 +62,7 @@ public class NorenView: UIWindow {
     
     private func animate(animations animations: Void -> Void, completion: (Bool -> Void)) {
         UIView.animateWithDuration(
-            0.4,
+            0.5,
             delay: 0,
             usingSpringWithDamping: 0.8,
             initialSpringVelocity: 0,
