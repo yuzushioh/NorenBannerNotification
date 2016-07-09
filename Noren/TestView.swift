@@ -8,15 +8,6 @@
 
 import UIKit
 
-class TestView: UIView, NorenViewType {
+class TestView: NorenView {
     
-    var norenInfomation: NorenInformation?
-    
-    class func createTestView() -> TestView {
-        let notificationView = UINib(nibName: "TestView", bundle: nil)
-            .instantiateWithOwner(nil, options: nil)
-            .first as! TestView
-        
-        return notificationView
-    }
 }

@@ -8,10 +8,7 @@
 
 import UIKit
 
-class TestNorenView2: UIView, NorenViewType {
-    
-    //Protocol
-    var norenInfomation: NorenInformation?
+class TestNorenView2: NorenView {
     
     @IBOutlet weak var underBar: UILabel!
     
@@ -20,13 +17,5 @@ class TestNorenView2: UIView, NorenViewType {
         
         underBar.layer.cornerRadius = 4
         underBar.clipsToBounds = true
-    }
-    
-    class func createTestView() -> TestNorenView2 {
-        let notificationView = UINib(nibName: "TestNorenView2", bundle: nil)
-            .instantiateWithOwner(nil, options: nil)
-            .first as! TestNorenView2
-        
-        return notificationView
     }
 }
