@@ -20,11 +20,9 @@ class ViewController: UIViewController {
     }
     
     private func showInstagramLikeNotification() {
+        let testView = TestView.presentNorenViewWithText("Main body text comes here", nibName: "TestView")
         
-        let testView = TestView.createTestView()
-        let norenView = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
-        
-        norenView
+        testView
             .onTap {
                 print("Tapされました")
             }
@@ -33,12 +31,12 @@ class ViewController: UIViewController {
     }
     
     private func showFacebookLikeNotification() {
-        let testView = TestNorenView2.createTestView()
-        let norenView = NorenManager.createNorenView(testView, norenInformation: NorenInformation(body: "ここに本文"))
+        let testView = TestNorenView2.presentNorenViewWithText("Main body text comes here", nibName: "TestNorenView2")
         
-        norenView
+        testView
+            .onTapDismiss()
             .onSwipeUpDismiss()
-            .show(duration: 5.0)
+            .show(duration: 2.0)
     }
 
     @IBAction func showNorenViewTapped(sender: AnyObject) {
