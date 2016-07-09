@@ -71,7 +71,7 @@ public class NorenView: UIWindow, NorenViewType {
         )
     }
     
-    public func presentNorenViewWithText(text: String, nibName: String) -> NorenView {
+    public static func presentNorenViewWithText(text: String, nibName: String) -> NorenView {
         let notificationView = UINib(nibName: nibName, bundle: nil)
             .instantiateWithOwner(nil, options: nil)
             .first as! NorenView
