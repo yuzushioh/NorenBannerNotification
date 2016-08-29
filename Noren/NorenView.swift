@@ -13,7 +13,7 @@ public class NorenView: UIWindow {
     
     public var bodyText: String?
     
-    private static var activeNorenWindoww: UIWindow?
+    public static var activeNorenWindoww: UIWindow?
     
     public override func awakeFromNib() {
         super.awakeFromNib()
@@ -60,7 +60,7 @@ public class NorenView: UIWindow {
         )
     }
     
-    private func animate(animations animations: Void -> Void, completion: (Bool -> Void)) {
+    public func animate(animations animations: Void -> Void, completion: (Bool -> Void)) {
         UIView.animateWithDuration(
             0.5,
             delay: 0,
