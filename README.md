@@ -13,7 +13,7 @@ who want to implement the best in-app notification in minutes.
 ##Installation
 #### [Carthage](https://github.com/Carthage/Carthage)
 
-- Insert `github "yuzushioh/Noren"` to your Cartfile.
+- Insert `github "yuzushioh/NorenBannerNotification"` to your Cartfile.
 - Run `carthage update --platform iOS`.
 - Link your app with `NorenNotification.framework`.
 
