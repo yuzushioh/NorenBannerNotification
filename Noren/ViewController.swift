@@ -24,10 +24,10 @@ class ViewController: UIViewController {
         
         testView
             .onTap {
-                print("Tapされました")
+                print("Tap detected")
             }
             .onSwipeUpDismiss()
-            .show(duration: 2.0)
+            .show(duration: 3.0)
     }
     
     private func showFacebookLikeNotification() {

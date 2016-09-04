@@ -8,13 +8,17 @@
 
 import UIKit
 
-class TestView: NorenView {
+class TestView: UIWindow, NorenViewType {
     
     @IBOutlet weak var bodyTextLabel: UILabel!
     
-    override var bodyText: String? {
-        didSet {
-            bodyTextLabel.text = bodyText
-        }
+    static func presentNorenViewWithText(text: String, nibName: String) -> TestView {
+        let notificationView = UINib(nibName: nibName, bundle: nil)
+            .instantiateWithOwner(nil, options: nil)
+            .first as! TestView
+        
+        notificationView.bodyTextLabel.text = text
+        
+        return notificationView
     }
 }

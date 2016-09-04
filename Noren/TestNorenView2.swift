@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestNorenView2: NorenView {
+class TestNorenView2: UIWindow, NorenViewType {
     
     @IBOutlet weak var underBar: UILabel!
     
@@ -17,5 +17,13 @@ class TestNorenView2: NorenView {
         
         underBar.layer.cornerRadius = 4
         underBar.clipsToBounds = true
+    }
+    
+    static func presentNorenViewWithText(text: String, nibName: String) -> TestNorenView2 {
+        let notificationView = UINib(nibName: nibName, bundle: nil)
+            .instantiateWithOwner(nil, options: nil)
+            .first as! TestNorenView2
+        
+        return notificationView
     }
 }
