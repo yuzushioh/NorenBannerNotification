@@ -13,7 +13,7 @@ who want to implement the best in-app notification in minutes.
 ##Installation
 #### [Carthage](https://github.com/Carthage/Carthage)
 
-- Insert `github "yuzushioh/Noren" ~> 1.1.2` to your Cartfile.
+- Insert `github "yuzushioh/Noren"` to your Cartfile.
 - Run `carthage update --platform iOS`.
 - Link your app with `NorenNotification.framework`.
 
@@ -22,22 +22,18 @@ It is really easy to use! 3 steps and it's good to go :)
 Samples are provided in a project!
 
 1. Import NorenNotification
-2. Create a class which inherits from NorenView, and nib file which will be displayed as BannerNotification
-
-3. Instantiate it by calling 
-```swift
-  let bannerNotification = someClassYouCreated
-                          .presentNorenViewWithText("text here will be displayed", nibName: "sample")
-```
-   You can set either 'onTap' or 'onTapDismiss' method to your view. At the end, you have to set 'show()' to display.
+2. Create a class which inherits from NorenViewType and UIWindow, and nib file which will be displayed as BannerNotification
+3. Then you can instantiate this nib file and here you go!
 ```swift
   bannerNotification 
       .onTap {
-        //implement what you want to do when on tap here.
+        //implement what you want to do when on tap.
       }
       .onSwipeUpDismiss()
       .show(duration: 2.0)
 ```
+
+Sample code is implemented in the project! Clone and check it🙋
 
 ##Pull Requests?
 Absolutely!
