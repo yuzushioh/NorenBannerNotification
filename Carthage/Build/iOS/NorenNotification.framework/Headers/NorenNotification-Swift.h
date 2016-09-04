@@ -93,41 +93,10 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import Foundation;
-@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class NSCoder;
-
-SWIFT_CLASS("_TtC17NorenNotification9NorenView")
-@interface NorenView : UIWindow
-@property (nonatomic, copy) NSString * _Nullable bodyText;
-+ (UIWindow * _Nullable)activeNorenWindoww;
-+ (void)setActiveNorenWindoww:(UIWindow * _Nullable)value;
-- (void)awakeFromNib;
-- (void)present:(NSTimeInterval)duration;
-- (void)dismiss:(void (^ _Nullable)(void))onTap;
-- (void)animateWithAnimations:(void (^ _Nonnull)(void))animations completion:(void (^ _Nonnull)(BOOL))completion;
-+ (NorenView * _Nonnull)presentNorenViewWithText:(NSString * _Nonnull)text nibName:(NSString * _Nonnull)nibName;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface NorenView (SWIFT_EXTENSION(NorenNotification))
-- (NorenView * _Nonnull)onTap:(void (^ _Nonnull)(void))onTap;
-- (NorenView * _Nonnull)onTapDismiss;
-- (NorenView * _Nonnull)onSwipeUpDismiss;
-- (void)showWithDuration:(NSTimeInterval)duration;
-@end
-
-
-@interface UIImageView (SWIFT_EXTENSION(NorenNotification))
-- (void)fromUrl:(NSString * _Nonnull)url;
-@end
-
 @class UITapGestureRecognizer;
 @class UISwipeGestureRecognizer;
 

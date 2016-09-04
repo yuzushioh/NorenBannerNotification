@@ -152,19 +152,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2AF24D8D1D06AE0600C93CBC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				2A3894CE1D0A966B00862600 /* UIVIew+Extension.swift */,
-			);
-			name = Extensions;
-			sourceTree = "<group>";
-		};
 		2AF24D921D06AFF100C93CBC /* Noren */ = {
 			isa = PBXGroup;
 			children = (
-				2AF24D8D1D06AE0600C93CBC /* Extensions */,
 				E96CDD741D05892400E5104B /* NorenViewType.swift */,
+				2A3894CE1D0A966B00862600 /* UIVIew+Extension.swift */,
 			);
 			name = Noren;
 			sourceTree = "<group>";
@@ -199,6 +191,7 @@
 		2AF24DFF1D06FE6400C93CBC /* TestNorenView2 */ = {
 			isa = PBXGroup;
 			children = (
+				2AF24DF91D06FCDA00C93CBC /* CircledImageView.swift */,
 				2AF24DFB1D06FDF500C93CBC /* TestNorenView2.swift */,
 				2AF24DFD1D06FE5000C93CBC /* TestNorenView2.xib */,
 			);
@@ -234,7 +227,6 @@
 			children = (
 				E96CDD441D05870500E5104B /* AppDelegate.swift */,
 				E96CDD461D05870500E5104B /* ViewController.swift */,
-				2AF24DF91D06FCDA00C93CBC /* CircledImageView.swift */,
 				2AF24D931D06B69600C93CBC /* TestNorenView */,
 				2AF24DFF1D06FE6400C93CBC /* TestNorenView2 */,
 				E96CDD481D05870600E5104B /* Main.storyboard */,

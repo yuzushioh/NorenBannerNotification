@@ -10,17 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    private func showInstagramLikeNotification() {
-        let testView = TestView.presentNorenViewWithText("Main body text comes here", nibName: "TestView")
+    @IBAction func showNorenViewTapped(sender: AnyObject) {
+        let testView = TestView.presentNorenViewWithText("Thank you for checking Noren", nibName: "TestView")
         
         testView
             .onTap {
@@ -30,21 +21,13 @@ class ViewController: UIViewController {
             .show(duration: 3.0)
     }
     
-    private func showFacebookLikeNotification() {
-        let testView = TestNorenView2.presentNorenViewWithText("Main body text comes here", nibName: "TestNorenView2")
+    @IBAction func showFacebookLikeView(sender: AnyObject) {
+        let testView = TestNorenView2.presentNorenViewWithText("Thank you for checking Noren", nibName: "TestNorenView2")
         
         testView
             .onTapDismiss()
             .onSwipeUpDismiss()
             .show(duration: 2.0)
-    }
-
-    @IBAction func showNorenViewTapped(sender: AnyObject) {
-        showInstagramLikeNotification()
-    }
-    
-    @IBAction func showFacebookLikeView(sender: AnyObject) {
-        showFacebookLikeNotification()
     }
 }
 
