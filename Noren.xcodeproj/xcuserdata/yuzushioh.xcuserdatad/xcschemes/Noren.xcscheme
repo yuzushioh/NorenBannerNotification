@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2AF24D981D06C48000C93CBC"
-               BuildableName = "NorenNotification.framework"
-               BlueprintName = "NorenNotification"
+               BlueprintIdentifier = "E96CDD401D05870500E5104B"
+               BuildableName = "Noren.app"
+               BlueprintName = "Noren"
                ReferencedContainer = "container:Noren.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,46 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E96CDD541D05870600E5104B"
+               BuildableName = "NorenTests.xctest"
+               BlueprintName = "NorenTests"
+               ReferencedContainer = "container:Noren.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E96CDD5F1D05870600E5104B"
+               BuildableName = "NorenUITests.xctest"
+               BlueprintName = "NorenUITests"
+               ReferencedContainer = "container:Noren.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2AF24DA11D06C48000C93CBC"
+               BuildableName = "NorenNotificationTests.xctest"
+               BlueprintName = "NorenNotificationTests"
+               ReferencedContainer = "container:Noren.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "E96CDD401D05870500E5104B"
+            BuildableName = "Noren.app"
+            BlueprintName = "Noren"
+            ReferencedContainer = "container:Noren.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +81,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AF24D981D06C48000C93CBC"
-            BuildableName = "NorenNotification.framework"
-            BlueprintName = "NorenNotification"
+            BlueprintIdentifier = "E96CDD401D05870500E5104B"
+            BuildableName = "Noren.app"
+            BlueprintName = "Noren"
             ReferencedContainer = "container:Noren.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +100,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2AF24D981D06C48000C93CBC"
-            BuildableName = "NorenNotification.framework"
-            BlueprintName = "NorenNotification"
+            BlueprintIdentifier = "E96CDD401D05870500E5104B"
+            BuildableName = "Noren.app"
+            BlueprintName = "Noren"
             ReferencedContainer = "container:Noren.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

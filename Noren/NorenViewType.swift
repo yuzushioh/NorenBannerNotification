@@ -10,17 +10,17 @@ import UIKit
 import AudioToolbox
 
 public protocol NorenViewType: class {
-    func dismiss(onTap: (Void -> Void)?)
+    func dismiss(onTap: ((Void) -> Void)?)
     func animate(animations animations: Void -> Void, completion: (Bool -> Void))
     
-    func onTap(onTap: (Void -> Void)) -> NorenViewType
+    func onTap(onTap: ((Void) -> Void)) -> NorenViewType
     func onTapDismiss() -> NorenViewType
     func onSwipeUpDismiss() -> NorenViewType
     func show(duration duration: NSTimeInterval)
 }
 
 public extension NorenViewType where Self: UIWindow {
-    public func onTap(onTap: (Void -> Void)) -> NorenViewType {
+    public func onTap(onTap: ((Void) -> Void)) -> NorenViewType {
         addSingleTapGestureRecognizerWithResponder { gesture in
             self.dismiss(onTap)
         }
@@ -44,7 +44,7 @@ public extension NorenViewType where Self: UIWindow {
         return self
     }
     
-    public func dismiss(onTap: (Void -> Void)?) {
+    public func dismiss(onTap: ((Void) -> Void)?) {
         animate(
             animations: {
                 self.frame.origin.y = -self.frame.size.height
