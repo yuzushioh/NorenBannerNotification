@@ -25,8 +25,6 @@
 		E96CDD4A1D05870600E5104B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96CDD481D05870600E5104B /* Main.storyboard */; };
 		E96CDD4C1D05870600E5104B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96CDD4B1D05870600E5104B /* Assets.xcassets */; };
 		E96CDD4F1D05870600E5104B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96CDD4D1D05870600E5104B /* LaunchScreen.storyboard */; };
-		E96CDD5A1D05870600E5104B /* NorenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD591D05870600E5104B /* NorenTests.swift */; };
-		E96CDD651D05870600E5104B /* NorenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD641D05870600E5104B /* NorenUITests.swift */; };
 		E96CDD751D05892400E5104B /* NorenViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CDD741D05892400E5104B /* NorenViewType.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,20 +49,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2AF24D981D06C48000C93CBC;
 			remoteInfo = NorenNotification;
-		};
-		E96CDD561D05870600E5104B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E96CDD391D05870500E5104B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E96CDD401D05870500E5104B;
-			remoteInfo = Noren;
-		};
-		E96CDD611D05870600E5104B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E96CDD391D05870500E5104B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E96CDD401D05870500E5104B;
-			remoteInfo = Noren;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -102,10 +86,8 @@
 		E96CDD4B1D05870600E5104B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96CDD4E1D05870600E5104B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96CDD501D05870600E5104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E96CDD551D05870600E5104B /* NorenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96CDD591D05870600E5104B /* NorenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenTests.swift; sourceTree = "<group>"; };
 		E96CDD5B1D05870600E5104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E96CDD601D05870600E5104B /* NorenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96CDD641D05870600E5104B /* NorenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorenUITests.swift; sourceTree = "<group>"; };
 		E96CDD661D05870600E5104B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E96CDD741D05892400E5104B /* NorenViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NorenViewType.swift; sourceTree = "<group>"; };
@@ -132,20 +114,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AF24DAE1D06C48000C93CBC /* NorenNotification.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E96CDD521D05870600E5104B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E96CDD5D1D05870600E5104B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				E96CDD411D05870500E5104B /* Noren.app */,
-				E96CDD551D05870600E5104B /* NorenTests.xctest */,
-				E96CDD601D05870600E5104B /* NorenUITests.xctest */,
 				2AF24D991D06C48000C93CBC /* NorenNotification.framework */,
 				2AF24DA21D06C48000C93CBC /* NorenNotificationTests.xctest */,
 			);
@@ -326,42 +292,6 @@
 			productReference = E96CDD411D05870500E5104B /* Noren.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E96CDD541D05870600E5104B /* NorenTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E96CDD6C1D05870600E5104B /* Build configuration list for PBXNativeTarget "NorenTests" */;
-			buildPhases = (
-				E96CDD511D05870600E5104B /* Sources */,
-				E96CDD521D05870600E5104B /* Frameworks */,
-				E96CDD531D05870600E5104B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E96CDD571D05870600E5104B /* PBXTargetDependency */,
-			);
-			name = NorenTests;
-			productName = NorenTests;
-			productReference = E96CDD551D05870600E5104B /* NorenTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E96CDD5F1D05870600E5104B /* NorenUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E96CDD6F1D05870600E5104B /* Build configuration list for PBXNativeTarget "NorenUITests" */;
-			buildPhases = (
-				E96CDD5C1D05870600E5104B /* Sources */,
-				E96CDD5D1D05870600E5104B /* Frameworks */,
-				E96CDD5E1D05870600E5104B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E96CDD621D05870600E5104B /* PBXTargetDependency */,
-			);
-			name = NorenUITests;
-			productName = NorenUITests;
-			productReference = E96CDD601D05870600E5104B /* NorenUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -369,26 +299,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = yuzushioh;
 				TargetAttributes = {
 					2AF24D981D06C48000C93CBC = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 					2AF24DA11D06C48000C93CBC = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 						TestTargetID = E96CDD401D05870500E5104B;
 					};
 					E96CDD401D05870500E5104B = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					E96CDD541D05870600E5104B = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = E96CDD401D05870500E5104B;
-					};
-					E96CDD5F1D05870600E5104B = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = E96CDD401D05870500E5104B;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -406,8 +331,6 @@
 			projectRoot = "";
 			targets = (
 				E96CDD401D05870500E5104B /* Noren */,
-				E96CDD541D05870600E5104B /* NorenTests */,
-				E96CDD5F1D05870600E5104B /* NorenUITests */,
 				2AF24D981D06C48000C93CBC /* NorenNotification */,
 				2AF24DA11D06C48000C93CBC /* NorenNotificationTests */,
 			);
@@ -438,20 +361,6 @@
 				E96CDD4F1D05870600E5104B /* LaunchScreen.storyboard in Resources */,
 				E96CDD4C1D05870600E5104B /* Assets.xcassets in Resources */,
 				E96CDD4A1D05870600E5104B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E96CDD531D05870600E5104B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E96CDD5E1D05870600E5104B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,22 +398,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E96CDD511D05870600E5104B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E96CDD5A1D05870600E5104B /* NorenTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E96CDD5C1D05870600E5104B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E96CDD651D05870600E5104B /* NorenUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -522,16 +415,6 @@
 			isa = PBXTargetDependency;
 			target = 2AF24D981D06C48000C93CBC /* NorenNotification */;
 			targetProxy = 2AF24DAC1D06C48000C93CBC /* PBXContainerItemProxy */;
-		};
-		E96CDD571D05870600E5104B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E96CDD401D05870500E5104B /* Noren */;
-			targetProxy = E96CDD561D05870600E5104B /* PBXContainerItemProxy */;
-		};
-		E96CDD621D05870600E5104B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E96CDD401D05870500E5104B /* Noren */;
-			targetProxy = E96CDD611D05870600E5104B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,6 +441,7 @@
 		2AF24DB11D06C48000C93CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -569,6 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -578,6 +463,7 @@
 		2AF24DB21D06C48000C93CBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -589,6 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -598,10 +485,12 @@
 		2AF24DB51D06C48000C93CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = NorenNotificationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotificationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noren.app/Noren";
 			};
 			name = Debug;
@@ -609,10 +498,12 @@
 		2AF24DB61D06C48000C93CBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = NorenNotificationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushio.NorenNotificationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noren.app/Noren";
 			};
 			name = Release;
@@ -631,8 +522,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -654,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -676,8 +569,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -693,9 +588,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -703,70 +599,28 @@
 		E96CDD6A1D05870600E5104B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Noren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.Noren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		E96CDD6B1D05870600E5104B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = Noren/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.Noren;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		E96CDD6D1D05870600E5104B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = NorenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.NorenTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noren.app/Noren";
-			};
-			name = Debug;
-		};
-		E96CDD6E1D05870600E5104B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = NorenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.NorenTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Noren.app/Noren";
-			};
-			name = Release;
-		};
-		E96CDD701D05870600E5104B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NorenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.NorenUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Noren;
-			};
-			name = Debug;
-		};
-		E96CDD711D05870600E5104B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NorenUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yuzushioh.NorenUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Noren;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -805,24 +659,6 @@
 			buildConfigurations = (
 				E96CDD6A1D05870600E5104B /* Debug */,
 				E96CDD6B1D05870600E5104B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E96CDD6C1D05870600E5104B /* Build configuration list for PBXNativeTarget "NorenTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E96CDD6D1D05870600E5104B /* Debug */,
-				E96CDD6E1D05870600E5104B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E96CDD6F1D05870600E5104B /* Build configuration list for PBXNativeTarget "NorenUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E96CDD701D05870600E5104B /* Debug */,
-				E96CDD711D05870600E5104B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
